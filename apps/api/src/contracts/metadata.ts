@@ -9,7 +9,7 @@ export const metadataContracts = {
       album: z.string().trim().max(200).optional(),
     }),
     output: z.object({
-      id: z.uuid(),
+      id: z.int().positive(),
       name: z.string(),
     }),
   }
